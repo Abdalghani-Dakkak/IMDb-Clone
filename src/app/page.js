@@ -1,5 +1,5 @@
-import Results from "@/components/Results";
 import React from "react";
+import Results from "@/components/Results";
 
 const API_KEY = process.env.API_KEY;
 
@@ -22,7 +22,6 @@ export default async function Home({ searchParams }) {
   if (!res.ok) throw new Error("something went wrong");
 
   const results = data.results;
-  console.log(results);
 
   return (
     <div>
